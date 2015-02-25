@@ -12,14 +12,14 @@ import logging
 import platform
 import errno
 
-from tvdb_api import (tvdb_error, tvdb_shownotfound, tvdb_seasonnotfound,
+from tvdb_api.tvdb_exceptions import (tvdb_error, tvdb_shownotfound, tvdb_seasonnotfound,
 tvdb_episodenotfound, tvdb_attributenotfound, tvdb_userabort)
 
-from tvnamer.unicode_helper import p
-from tvnamer.compat import string_type
+from tvnamer.tvnamer.unicode_helper import p
+from tvnamer.tvnamer.compat import string_type
 
-from tvnamer.config import Config
-from tvnamer.tvnamer_exceptions import (InvalidPath, InvalidFilename,
+from tvnamer.tvnamer.config import Config
+from tvnamer.tvnamer.tvnamer_exceptions import (InvalidPath, InvalidFilename,
 ShowNotFound, DataRetrievalError, SeasonNotFound, EpisodeNotFound,
 EpisodeNameNotFound, ConfigValueError, UserAbort)
 
